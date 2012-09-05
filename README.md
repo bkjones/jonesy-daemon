@@ -7,7 +7,7 @@ in Python apps.
 The basic usage looks something like this: 
 
 ```python
-from jonesy-daemon import daemonize
+from jonesy_daemon import daemonize
 def main():
     ...some setup stuff here...
 

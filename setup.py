@@ -1,7 +1,7 @@
 import os
 import sys
 
-import .daemonize
+import .jonesy_daemon
 
 try:
     from setuptools import setup
@@ -9,13 +9,13 @@ except ImportError:
     from distutils.core import setup
 
 setup(
-    name='jonesy-daemon',
-    version=daemonize.__version__,
-    description='The jonesy-daemon daemonization library',
-    author=daemonize.__author__,
-    url='http://github.com/bkjones/jonesy-daemon',
+    name='jonesy_daemon',
+    version=jonesy_daemon.__version__,
+    description='The jonesy_daemon daemonization library',
+    author=jonesy_daemon.__author__,
+    url='http://github.com/bkjones/jonesy_daemon',
     author_email='bkjones@gmail.com',
-    packages='daemonize',
+    packages='jonesy_daemon',
     classifiers=(
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
