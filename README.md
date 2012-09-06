@@ -14,6 +14,7 @@ def main():
     if not args.run_in_foreground:
         daemonize(user='www-data', pidfile='/var/run/myapp.pid')
 
+    # everything after the daemonize() call is post-fork
     myapp = make_app()
     myapp.loop_and_listen(port=80)
 
